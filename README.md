@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # homepage
 
 ## Build Setup
@@ -19,6 +18,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-=======
-# homepage
->>>>>>> 088a23c2b71d6c8df3fc70359bc427de67e2dbf5
