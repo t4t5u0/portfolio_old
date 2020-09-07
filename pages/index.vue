@@ -5,8 +5,7 @@
       <div id="item1" class="main-text">
         <p>工事中</p>
       </div>
-      <div id="item2" class="twitter-link">
-        連絡先：<a href="https://twitter.com/i4mwh4ti4m" target="_blank"
+      <div id="item2" class="twitter-link">連絡先：<a href="https://twitter.com/i4mwh4ti4m" target="_blank"
           >twitter</a
         >
       </div>
@@ -36,7 +35,7 @@ body {
   gap: 10px;
   /* grid-auto-rows: minmax(100px, auto); */
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   /* min-height: calc(100vh-15em); */
   /* min-height: 100vh; */
@@ -46,16 +45,16 @@ body {
 }
 
 #item1{
-  grid-row: 1;
-  grid-column: 1;
+  /* grid-row: 1;
+  grid-column: 1; */
   text-align: center;
   border-radius: 10px;
   background-color: rgba(230, 230, 230, 0.35);
 }
 
 #item2{
-  grid-row: 1;
-  grid-column: 2;
+  /* grid-row: 1;
+  grid-column: 2; */
   text-align: center;
   border-radius: 10px;
   background-color: rgba(230, 230, 230, 0.35);
