@@ -1,24 +1,26 @@
 <template>
   <div class="my-body">
-    <div class="my-header">
-    </div>
+    <LHeader />
     <div class="container">
-      <div class="main-text">
+      <div id="item1" class="main-text">
         <p>工事中</p>
       </div>
-      <br />
-      <div class="twitter-link">
-          連絡先：<a href="https://twitter.com/i4mwh4ti4m" target="_blank">twitter</a>
+      <div id="item2" class="twitter-link">連絡先：<a href="https://twitter.com/i4mwh4ti4m" target="_blank"
+          >twitter</a
+        >
       </div>
     </div>
-    <div class="my-fooder">
-      <!-- <br /> -->
-    </div>
+    <LFooter />
   </div>
 </template>
 
 <script>
-export default {};
+import LHeader from "../components/layouts/Header";
+import LFooter from "../components/layouts/Footer";
+
+export default {
+  components: { LFooter, LHeader }
+};
 </script>
 
 <style>
@@ -29,79 +31,44 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  margin-top: -5em;
-  margin-bottom: -10em;
+  display: grid;
+  gap: 10px;
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   /* min-height: calc(100vh-15em); */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* min-height: 100vh; */
+  /* min-width: 1fr; */
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+#item1{
+  /* grid-row: 1;
+  grid-column: 1; */
   text-align: center;
-  /* background-color: #ffe81c; */
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.35);
 }
 
-.my-header {
-  width: 100%;
-  /* top: 20%; */
-  height: 5em;
-  background: repeating-linear-gradient(
-    135deg,
-    yellow 0px,
-    yellow 25px,
-    black 0px,
-    black 50px
-  );
-}
-
-.my-fooder {
-  width: 100%;
-  /* bottom: -10em; */
-  height: 10em;
-  background: repeating-linear-gradient(
-    135deg,
-    yellow 0px,
-    yellow 25px,
-    black 0px,
-    black 50px
-  );
+#item2{
+  /* grid-row: 1;
+  grid-column: 2; */
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.35);
 }
 
 .main-text {
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
     "Meiryo", "verdana", sans-serif;
   font-size: 10em;
+  margin: 10px;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.twitter-link{
+.twitter-link {
   font-size: 5em;
-  margin: 100px;
+  margin: 10px;
 }
-/* .header {
-  width: 100%;
-  top: 20%;
-  background: repeating-linear-gradient(135deg, yellow, yellow, 5px, black);
-} */
 </style>
