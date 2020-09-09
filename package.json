@@ -12,6 +12,7 @@
     "@nuxt/cli": "^2.14.4",
     "@vue/cli": "^4.5.4",
     "nuxt": "^2.14.0",
+    "nuxt-webfontloader": "^1.1.0",
     "vue": "^2.6.12"
   },
   "devDependencies": {}
