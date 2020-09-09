@@ -48,7 +48,7 @@ body {
   gap: 10px;
   /* grid-auto-rows: minmax(100px, auto); */
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   /* min-height: calc(100vh-15em); */
   min-height: 300px;
@@ -62,7 +62,7 @@ body {
   grid-column: 1; */
   /* margin :10x; */
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   border-radius: 10px;
   background-color: rgba(88, 88, 88, 0.7);
 }
