@@ -11,9 +11,21 @@
   "dependencies": {
     "@nuxt/cli": "^2.14.4",
     "@vue/cli": "^4.5.4",
-    "nuxt": "^2.14.0",
+    "nuxt": "^2.14.4",
     "nuxt-webfontloader": "^1.1.0",
     "vue": "^2.6.12"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t4t5u0/homepage.git"
+  },
+  "author": "t4t5u0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t4t5u0/homepage/issues"
+  },
+  "homepage": "https://github.com/t4t5u0/homepage#readme"
 }
