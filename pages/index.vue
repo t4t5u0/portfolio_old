@@ -3,12 +3,25 @@
     <!-- <LHeader /> -->
     <div class="container">
       <div id="item" class="main-text">
-        <p>工事中</p>
+        工事中
       </div>
-      <!-- <div id="item" class="twitter-link"> -->
       <div id="item" class="sacrament">
-        Contact:
-        <a href="https://twitter.com/i4mwh4ti4m" target="_blank">Twitter</a>
+        <nuxt-link to="/korewokeshitai/About">About</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Blog">Blog</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Works">Works</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Articles">Articles</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Contact">Contact</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Others">Others</nuxt-link>
       </div>
       <div id="item" class="sacrament">hogehoge</div>
     </div>
@@ -21,7 +34,7 @@ import LHeader from "../components/layouts/Header";
 import LFooter from "../components/layouts/Footer";
 
 export default {
-  components: { LFooter, LHeader },
+  components: { LFooter, LHeader }
 };
 </script>
 
@@ -31,11 +44,7 @@ body {
   /* height: %; */
   /* background-color: yellow; */
   background-color: rgb(70, 70, 70);
-  background-image: linear-gradient(
-      335deg,
-      rgb(0, 0, 0) 23px,
-      transparent 23px
-    ),
+  background-image: linear-gradient(335deg, rgb(0, 0, 0) 23px, transparent 23px),
     linear-gradient(155deg, #191919 23px, transparent 23px),
     linear-gradient(335deg, #191919 23px, transparent 23px),
     linear-gradient(155deg, #191919 23px, transparent 23px);
@@ -46,13 +55,13 @@ body {
 .container {
   display: grid;
   gap: 10px;
-  /* grid-auto-rows: minmax(100px, auto); */
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 200px);
+  /* grid-auto-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-columns: repeat(auto-fix, minmax(300px, 1fr)); */
   /* min-height: calc(100vh-15em); */
-  min-height: 300px;
-  /* min-width: 1fr; */
+  /* min-height: 200px;
+  min-width: 300px; */
   /* align-items: center; */
   /* text-align: center; */
 }
@@ -60,11 +69,14 @@ body {
 #item {
   /* grid-row: 1;
   grid-column: 1; */
-  /* margin :10x; */
+  margin: 10x;
+  /* margin-top: 50%; */
   text-align: center;
   /* vertical-align: middle; */
   border-radius: 10px;
   background-color: rgba(88, 88, 88, 0.7);
+  min-height: 200px;
+  min-width: 300px;
 }
 
 /* #item1 {
@@ -89,11 +101,11 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 100;
   font-size: 4em;
-  margin: 10px;
+  /* margin: 10px; */
   /* color: white; */
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.3), 0 0 2px rgba(255, 255, 255, 1),
     0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
     0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de,
@@ -106,7 +118,7 @@ body {
 }
 
 .sacrament {
-  margin: 10px;
+  /* margin: 10px; */
   font-family: "Sacramento", cursive;
   font-size: 4em;
   /* font-family: 'Pacifico', cursive; */
@@ -114,10 +126,16 @@ body {
   border: none;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.3), 0 0 2px rgba(255, 255, 255, 1),
     0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
     0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de,
     0 0 80px #ff00de, 0 0 100px #ff00de;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  /* vertical-align: middle; */
 }
 </style>
