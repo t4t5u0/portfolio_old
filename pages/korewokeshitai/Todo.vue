@@ -1,9 +1,11 @@
 <template>
-  <ul>
-    <li v-for="item in items" :key="item.message">
-      {{ item.message }}
-    </li>
-  </ul>
+  <div class="todo-body">
+    <ul>
+      <li v-for="item in items" :key="item.message">
+        {{ item.message }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -20,7 +22,7 @@ export default {
 </script>
 
 <style>
-body {
+todo-body {
   background-image: none;
   background-color: aliceblue;
 }
