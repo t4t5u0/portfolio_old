@@ -6,6 +6,9 @@
         工事中
       </div>
       <div id="item" class="sacrament">
+        <nuxt-link to="/korewokeshitai/Todo">Todo</nuxt-link>
+      </div>
+      <div id="item" class="sacrament">
         <nuxt-link to="/korewokeshitai/About">About</nuxt-link>
       </div>
       <div id="item" class="sacrament">
@@ -30,6 +33,7 @@
 </template>
 
 <script>
+import Vue from "vue"
 import LHeader from "../components/layouts/Header";
 import LFooter from "../components/layouts/Footer";
 
@@ -137,5 +141,6 @@ a {
   color: #fff;
   text-decoration: none;
   /* vertical-align: middle; */
+  margin: 30%;
 }
 </style>
