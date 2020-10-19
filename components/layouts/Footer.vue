@@ -1,5 +1,5 @@
 <template>
-  <footer></footer>
+  <footer><div id="footer-text">@2020 Ryuki Yamamoto</div></footer>
 </template>
 
 <script>
@@ -7,17 +7,23 @@ export default {};
 </script>
 
 <style>
-footer{
-    width: 100%;
-    height: 15vh;
-    background: repeating-linear-gradient(
-    135deg,
-    yellow 0px,
-    yellow 25px,
-    black 0px,
-    black 50px
-  );
+footer {
+  border: dashed 1px;
+  background-color: lightgray;
+  /* text-align: center; */
+  /* margin: auto; */
+  width: 100%;
+  height: 10vh;
+
+  /* position: bottom; */
   position: absolute;
   bottom: 0%;
+}
+
+#footer-text {
+  text-align: center;
+  margin: auto;
+  vertical-align: -webkit-baseline-middle;
+  /* color: yellow; */
 }
 </style>

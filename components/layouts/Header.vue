@@ -1,22 +1,21 @@
 <template>
-  <header></header>
+  <header>header</header>
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
 <style>
-header {
+header{
+  border: dashed 1px;
+  background-color: lightgray;
+  text-align: center;
+  height: 90px;
   width: 100%;
-  /* top: 20%; */
-  height: 10vh;
-  background: repeating-linear-gradient(
-    135deg,
-    yellow 0px,
-    yellow 25px,
-    black 0px,
-    black 50px
-  );
+  /* top: 40px; */
+  position: absolute;
 }
 </style>
