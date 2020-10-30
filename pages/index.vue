@@ -1,6 +1,8 @@
 <template>
   <dev>
     <Header />
+    <Container/>
+    <Container/>
     <Footer />
   </dev>
 </template>

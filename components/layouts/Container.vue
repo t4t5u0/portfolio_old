@@ -1,13 +1,17 @@
 <template>
-  
+  <div id="container">this is container</div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
+#container {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    border: dashed 1px;
+    
+}
 </style>
