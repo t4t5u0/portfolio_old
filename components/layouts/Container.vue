@@ -12,6 +12,7 @@ export default {};
     height: 300px;
     margin: 5%;
     border: dashed 1px;
+    box-sizing: border-box;
     
 }
 </style>
