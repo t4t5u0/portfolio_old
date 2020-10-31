@@ -9,7 +9,7 @@ export default {};
 <style>
 #container {
     width: 90%;
-    height: 300px;
+    height: 200px;
     margin: 5%;
     border: dashed 1px;
     box-sizing: border-box;

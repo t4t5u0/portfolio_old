@@ -7,16 +7,7 @@
 </template>
 
 <script>
-// import TheHeader from "~/components/layouts/TheHeader";
-// import TheFooTer from "~/components/layouts/TheFooter";
 
-// export default {
-//   components: {
-//     TheHeader,
-//     TheFooter,
-//   },
-// };
-//
 </script>
 
 <style>

@@ -1,10 +1,12 @@
 <template>
   <div>
     <div id="workspage">
-    <TheHeader />
-    <h1>This is Works</h1>
-    <n-link to="/"> Go to Home</n-link>
-  </div>
+      <TheHeader />
+      <h1>This is Works</h1>
+      <n-link to="/"> Go to Home</n-link>
+      <Container />
+      <Container />
+    </div>
     <TheFooter />
   </div>
 </template>
@@ -14,7 +16,7 @@ export default {};
 </script>
 
 <style>
-#workspage{
+#workspage {
   min-height: calc(100vh - 100px);
 }
 </style>

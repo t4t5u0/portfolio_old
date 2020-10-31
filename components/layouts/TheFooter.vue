@@ -15,9 +15,12 @@ body {
   /* min-height: calc(100vh - 100px); */
 }
 
+/* #footer {
+  display: flex;
+} */
 
 footer {
-  /* display: flex; */
+  display: flex;
   /* flex-direction: column; */
   margin: 0%;
   padding: 0%;
@@ -33,18 +36,9 @@ footer {
   bottom: 0px;
 }
 
-/* #footer-height{
-  background-color:#333333 ;
-  content: "";
-  display: block;
-  height: 100px;
-  width: 100%;
-  padding-top: 100px;
-} */
 
 #footer-text {
-  /* display: block; */
-  /* padding: 20px; */
+  flex: 1;
   text-align: center;
   margin: auto;
   vertical-align: -webkit-baseline-middle;

@@ -2,11 +2,12 @@
   <div>
     <div class="mainpage">
       <TheHeader />
+      <h1> This is Main </h1>
+      <p><n-link to="/about">Go to About</n-link></p>
+      <p><n-link to="/works">Go to Works</n-link></p>
       <Container />
       <Container />
       <Container />
-      <n-link to="/about">Go to About</n-link><br />
-      <n-link to="/works">Go to works</n-link>
     </div>
     <TheFooter />
   </div>
