@@ -9,8 +9,12 @@ export default {};
 <style>
 #container {
     width: 90%;
+    max-width: 1500px;
     height: 200px;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5% ;
+    margin-right: auto;
+    margin-left: auto;
     border: dashed 1px;
     box-sizing: border-box;
     
