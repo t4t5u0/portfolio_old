@@ -21,6 +21,7 @@
         <p>たつお | t4t5u0</p>
         <p>Deep Learning 園児neer</p>
       </div>
+      <div class="dashed-box" id="history"><p>2000年生まれ。函館商業高等学校情報処理科を卒業後、公立はこだて未来大学に入学。現在は、同大学複雑系コースに在籍している。</p></div>
       <div class="dashed-box" id="info">
         <div id="inline-box">
           <ul id="list-intersting">
@@ -58,9 +59,9 @@ export default {};
   min-height: calc(100vh - 100px);
 }
 
-.dashed-box{
-  /* border: dashed 1px;
-  box-sizing: border-box; */
+.dashed-box {
+  border: dashed 1px;
+  box-sizing: border-box;
 }
 
 #face-img {
@@ -88,6 +89,22 @@ export default {};
   font-size: 20px;
 }
 
+#history {
+  /* height: 200px; */
+  width: 90%;
+  margin: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+#history > p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 #info {
   display: flex;
   flex-direction: column;
@@ -99,7 +116,7 @@ export default {};
   margin-bottom: 50px;
 }
 
-#inline-box{
+#inline-box {
   display: flex;
 }
 
