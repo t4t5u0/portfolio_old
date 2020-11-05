@@ -123,6 +123,7 @@ export default {};
 }
 
 #go-to-home{
-  margin-left:10px ;
+  margin-left:5% ;
+  font-size: 20px;
 }
 </style>
