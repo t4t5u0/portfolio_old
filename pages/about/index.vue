@@ -2,17 +2,6 @@
   <div>
     <div class="aboutpage">
       <TheHeader />
-      <!-- <h1>This is About</h1>
-      <n-link to="/">Go to home</n-link>
-      <ul>
-        <li>name: t4t5u0</li>
-        <li>
-          twitter:
-          <a href="https://twitter.com/i4mwh4ti4m" target="_blank"
-            >@i4mwh4ti4m</a
-          >
-        </li>
-      </ul> -->
       <div class="dashed-box" id="face-img">
         <img src="https://placehold.jp/150x150.png?text=face" alt="face" />
       </div>
@@ -45,6 +34,7 @@
         </ul>
       </div>
       <div id="sns"></div>
+      <div id="go-to-home"><n-link to="/"> Go to Home</n-link></div>
     </div>
     <TheFooter />
   </div>
@@ -130,5 +120,9 @@ export default {};
 
 #list-like {
   flex: 1;
+}
+
+#go-to-home{
+  margin-left:10px ;
 }
 </style>
