@@ -8,7 +8,7 @@
       <div class="dashed-box" id="profile">
         <!-- <p>山本竜生 | Ryuki Yamamoto</p> -->
         <p>たつお | t4t5u0</p>
-        <p>Deep Learning 園児neer</p>
+        <p>Deep Learning 園児near</p>
       </div>
       <div class="dashed-box" id="history">
         <p>
@@ -97,6 +97,7 @@ export default {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
+  /* vertical-align: baseline; */
 }
 
 #face-img > img {
@@ -170,22 +171,33 @@ export default {
   list-style: none;
   display: flex;
   justify-content: center;
-  /* margin: 0px;
-  padding: 0px; */
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-#sns > li {
+#sns > li{
   margin: 0px;
   padding: 0px;
 }
 
 .sns-image-link {
   flex: 1;
+  /* margin: 10px; */
+  padding: 0;
+  text-align: center;
+}
+
+.sns-image-link > a {
+  width: 0;
+  height: 0;
 }
 
 .sns-image-link > a > img {
   border-radius: 50%;
-  width: 40px;
+  width: min(20vw, 150px);
+  vertical-align: bottom;
 }
 
 #go-to-home {
