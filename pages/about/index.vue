@@ -10,7 +10,11 @@
         <p>たつお | t4t5u0</p>
         <p>Deep Learning 園児neer</p>
       </div>
-      <div class="dashed-box" id="history"><p>2000年生まれ。函館商業高等学校情報処理科を卒業後、公立はこだて未来大学に入学。現在は、同大学複雑系コースに在籍している。</p></div>
+      <div class="dashed-box" id="history">
+        <p>
+          2000年生まれ。函館商業高等学校情報処理科を卒業後、公立はこだて未来大学に入学。現在は、同大学複雑系コースに在籍している。
+        </p>
+      </div>
       <div class="dashed-box" id="info">
         <div id="inline-box">
           <ul id="list-intersting">
@@ -33,7 +37,13 @@
           <li>邦ロック</li>
         </ul>
       </div>
-      <div id="sns"></div>
+      <div id="sns" class="dashed-box">
+        <ul>
+          <li v-for="item in object" :key="item.title" class="sns-image-link">
+            <a :href="item.link" target="_blank"><img :src="item.image" :alt="item.title" /></a>
+          </li>
+        </ul>
+      </div>
       <div id="go-to-home"><n-link to="/"> Go to Home</n-link></div>
     </div>
     <TheFooter />
@@ -41,7 +51,32 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      object: [
+        {
+          title: "Twitter",
+          image:
+            "https://placehold.jp/54c0ff/ffffff/150x150.png?text=Twitter%20icon%0A150x150",
+          link: "https://twitter.com/i4mwh4ti4m",
+        },
+        {
+          title: "GitHub",
+          image:
+            "https://placehold.jp/000000/ffffff/150x150.png?text=GitHub%20icon%0A150x150",
+          link: "https://github.com/t4t5u0",
+        },
+        {
+          title: "Qiita",
+          image:
+            "https://placehold.jp/6cf567/ffffff/150x150.png?text=Qiita%20icon%0A150x150",
+          link: "https://qiita.com/t4t5u0",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
@@ -56,7 +91,7 @@ export default {};
 
 #face-img {
   width: 90%;
-  height: 150px;
+  /* height: 150px; */
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
@@ -65,8 +100,12 @@ export default {};
 }
 
 #face-img > img {
-  width: 150px;
-  height: 150px;
+  /* width: 150px; */
+  /* height: 150px; */
+  width: 50vw;
+  height: 50vw;
+  max-width: 400px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -76,7 +115,7 @@ export default {};
   /* height: 150px; */
   margin: auto;
   text-align: center;
-  font-size: 20px;
+  font-size: min(calc(100vw / 20), 40px);
 }
 
 #history {
@@ -86,7 +125,7 @@ export default {};
   margin-left: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  
+  font-size: min(calc(100vw / 32), 28px); /* メディアクエリ使いなさい */
 }
 
 #history > p {
@@ -122,8 +161,35 @@ export default {};
   flex: 1;
 }
 
-#go-to-home{
-  margin-left:5% ;
+#sns {
+  width: 90%;
+  margin: auto;
+}
+
+#sns > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* margin: 0px;
+  padding: 0px; */
+}
+
+#sns > li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sns-image-link {
+  flex: 1;
+}
+
+.sns-image-link > a > img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+#go-to-home {
+  margin-left: 5%;
   font-size: 20px;
 }
 </style>
