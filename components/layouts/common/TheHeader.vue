@@ -14,27 +14,30 @@ export default {};
 </script>
 
 <style>
-
 header {
-  /* flex: 1; */
-  display: flex;
+  /* display: flex; */
   margin: 0%;
   padding: 0%;
+  /* height: 100px; */
   border: dashed 1px;
   box-sizing: border-box;
   background-color: lightgray;
   text-align: center;
-
-  /* top: 40px; */
-  /* position: absolute; */
 }
 
-#text{
-  flex: 1;
+#text {
+  /* flex: 1; */
 }
 
-#hmenu{
+#hmenu {
   /* flex: 1;  */
-  margin: auto;
+  /* margin: auto; 
+  position: fixed; /*常に最上部に表示したいので固定
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 50;  */
 }
 </style>
