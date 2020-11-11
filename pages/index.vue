@@ -15,7 +15,7 @@
         <!-- <p>山本竜生 | Ryuki Yamamoto</p> -->
         <p>たつお | t4t5u0</p>
         <p>Deep Learning 園児near</p>
-        <p><n-link to="/works"> more information</n-link></p>
+        <p><n-link to="/about"> more information</n-link></p>
       </div>
       </div>
       <!-- <h1> This is Main </h1>
