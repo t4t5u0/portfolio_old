@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!-- <burger-button :active="isActive" @click="isActive = !isActive">
-    </burger-button> -->
     <div id="app">
       <div class="hamburger_btn" v-on:click="isActive = !isActive">
         <span
@@ -31,16 +29,13 @@
 </template>
 
 <script>
-import BurgerButton from "vue-burger-button";
 export default {
-  components: { BurgerButton },
   data: () => ({ isActive: false }),
 };
 </script>
 
 
 <style>
-
 /*ボタン*/
 .hamburger_btn {
   position: fixed; /*常に最上部に表示したいので固定*/
@@ -75,7 +70,6 @@ export default {
   transition: 0.4s ease;
 }
 
-
 .btn_line01 {
   transform: translateY(10px) rotate(-45deg);
   transition: 0.4s ease;
@@ -88,7 +82,6 @@ export default {
   transform: translateY(-10px) rotate(45deg);
   transition: 0.4s ease;
 }
-
 
 /*サイドバー*/
 .menu-enter-active,
@@ -122,12 +115,12 @@ export default {
 } */
 
 .menu {
-  background-color: rgba(197, 197, 197, 0.671);
+  background-color: rgba(197, 197, 197, 0.8);
   z-index: 30;
   padding: 2rem 1rem;
   position: fixed;
-  width: 20rem;
-  height: 80rem;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   right: 0;
 }
