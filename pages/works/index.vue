@@ -17,6 +17,11 @@ export default {};
 
 <style>
 #workspage {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px); 
 }
+
+h1, a{
+  margin-left: 5%;
+}
+
 </style>
