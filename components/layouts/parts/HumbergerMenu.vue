@@ -103,16 +103,6 @@ export default {
   padding: 1rem;
 }
 
-/* .menu{
-  margin: auto;
-  position: fixed; /*常に最上部に表示したいので固定
-  top: 10px;
-  right: 0px;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  z-index: 50;
-} */
 
 .menu {
   background-color: rgba(197, 197, 197, 0.8);
