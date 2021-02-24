@@ -33,7 +33,7 @@
         <ul id="list-like">
           好き
           <li>プログラミング</li>
-          <li>スノーバーガー</li>
+          <li><a href="http://luckypierrot.jp/menu/snowbg/" target="_blank">スノーバーガー</a></li>
           <li>喫茶店に通う</li>
           <li>邦ロック</li>
           <li>Future Bass</li>
