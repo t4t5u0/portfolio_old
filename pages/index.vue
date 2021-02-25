@@ -7,7 +7,7 @@
       <TopPosts />
       <TopHistory />
       <GoToButton :path="'/about'" name="About"></GoToButton>
-      <GoToButton :path="'/home'" name="Home"></GoToButton>
+      <GoToButton :path="'/'" name="Home"></GoToButton>
     </div>
     <TheFooter />
   </div>
@@ -16,11 +16,6 @@
 <script>
 import GoToButton from "../components/layouts/parts/GoToButton.vue";
 export default {
-  data() {
-    return {
-
-    }
-  },
   components: { GoToButton },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <v-btn rounded :to="path" nuxt>
+    <v-btn rounded :to="path" nuxt depressed>
       go to {{ name }}
     </v-btn>
   </div>
