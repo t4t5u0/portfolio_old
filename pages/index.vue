@@ -6,13 +6,23 @@
       <TopWorks />
       <TopPosts />
       <TopHistory />
+      <GoToButton :path="'/about'" name="About"></GoToButton>
+      <GoToButton :path="'/home'" name="Home"></GoToButton>
     </div>
     <TheFooter />
   </div>
 </template>
 
 <script>
-export default {};
+import GoToButton from "../components/layouts/parts/GoToButton.vue";
+export default {
+  data() {
+    return {
+
+    }
+  },
+  components: { GoToButton },
+};
 </script>
 
 <style>
