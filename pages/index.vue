@@ -2,28 +2,10 @@
   <div>
     <div class="mainpage">
       <TheHeader />
-      <div class="dashed-box" id="work">work1</div>
-      <div class="dashed-box" id="work">work2</div>
-      <div class="dashed-box" id="link-more-works">
-        <n-link to="/works"> more Works</n-link>
-      </div>
-      <div class="dashed-box">
-      <div class="dashed-box" id="face-img">
-        <img src="https://placehold.jp/150x150.png?text=face" alt="face" />
-      </div>
-      <div class="dashed-box" id="profile">
-        <!-- <p>山本竜生 | Ryuki Yamamoto</p> -->
-        <p>たつお | t4t5u0</p>
-        <p>Deep Learning 園児near</p>
-        <p><n-link to="/about"> more information</n-link></p>
-      </div>
-      </div>
-      <!-- <h1> This is Main </h1>
-      <p><n-link to="/about">Go to About</n-link></p>
-      <p><n-link to="/works">Go to Works</n-link></p>
-      <Container />
-      <Container />
-      <Container /> -->
+      <TopAbout />
+      <TopWorks />
+      <TopPosts />
+      <TopHistory />
     </div>
     <TheFooter />
   </div>
@@ -61,7 +43,7 @@ div {
   height: 75vw;
 }
 
-#link-more-works{
+#link-more-works {
   display: flex;
   height: 100px;
   text-align: center;
@@ -103,5 +85,4 @@ div {
   text-align: center;
   font-size: min(calc(100vw / 20), 40px);
 }
-
 </style>
