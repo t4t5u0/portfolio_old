@@ -1,5 +1,5 @@
 <template>
-  <v-btn :to="path" nuxt outlined width="150"> go to {{ name }} </v-btn>
+  <v-btn :to="path" nuxt outlined width="150" class="scoped"> go to {{ name }} </v-btn>
 </template>
 <script>
 export default {
@@ -8,7 +8,8 @@ export default {
 </script>
 
 <style>
-#hoge {
-  margin: auto;
+.scoped {
+  /* margin: auto; */
+  text-align: center;
 }
 </style>
