@@ -17,7 +17,9 @@
     "sass-loader": "^10.0.3",
     "vue": "^2.6.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3"
+  },
   "description": "## Build Setup",
   "main": "nuxt.config.js",
   "repository": {
