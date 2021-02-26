@@ -5,9 +5,9 @@
 
 <template>
   <div>
-    <h2 class="scoped">Posts</h2>
+    <h2 class="scoped2">Posts</h2>
     <v-container>
-      <v-row justify="senter">
+      <v-row justify="senter" justify-lg="senter" justify-xl="senter">
         <v-col
           cols="12"
           xs="12"
@@ -38,7 +38,8 @@ export default {
 </script>
 
 <style>
-.scoped{
+.scoped2{
   text-align: center;
+  margin: 20px 0 20px 0;
 }
 </style>
