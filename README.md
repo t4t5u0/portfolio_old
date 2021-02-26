@@ -1,4 +1,5 @@
 # homepage
+[![Netlify Status](https://api.netlify.com/api/v1/badges/926acb08-a1e7-4016-af19-f93e568650ac/deploy-status)](https://app.netlify.com/sites/jovial-noyce-b589c3/deploys)
 
 ## Build Setup
 
