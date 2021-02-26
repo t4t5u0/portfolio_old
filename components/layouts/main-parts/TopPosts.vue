@@ -5,7 +5,7 @@
 
 <template>
   <div>
-    <h2>Posts</h2>
+    <h2 class="scoped">Posts</h2>
     <v-container>
       <v-row justify="senter">
         <v-col
