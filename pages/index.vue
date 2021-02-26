@@ -6,8 +6,24 @@
       <TopWorks />
       <TopPosts />
       <TopHistory />
-      <GoToButton :path="'/about'" name="About"></GoToButton>
-      <GoToButton :path="'/'" name="Home"></GoToButton>
+      <v-container>
+        <v-row justify="center">
+          <v-col
+            cols="12"
+            xs="12"
+            sm="6"
+            md="6"
+            lg="6"
+            xl="6"
+            v-for="title in Titles"
+            :key="title"
+          >
+            <CardContent :title="title" />
+          </v-col>
+        </v-row>
+      </v-container>
+      <GoToButton :path="'/about'" name="About" />
+      <GoToButton :path="'/'" name="Home" />
     </div>
     <TheFooter />
   </div>
@@ -16,6 +32,9 @@
 <script>
 import GoToButton from "../components/layouts/parts/GoToButton.vue";
 export default {
+  data: () => ({
+    Titles: ["Hoge", "Fuga", "Piyo", "Zura"],
+  }),
   components: { GoToButton },
 };
 </script>
