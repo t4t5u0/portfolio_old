@@ -1,9 +1,5 @@
 <template>
-  <div class="text-center">
-    <v-btn rounded :to="path" nuxt depressed>
-      go to {{ name }}
-    </v-btn>
-  </div>
+  <v-btn :to="path" nuxt outlined width="150"> go to {{ name }} </v-btn>
 </template>
 <script>
 export default {
@@ -12,5 +8,7 @@ export default {
 </script>
 
 <style>
-
+#hoge {
+  margin: auto;
+}
 </style>

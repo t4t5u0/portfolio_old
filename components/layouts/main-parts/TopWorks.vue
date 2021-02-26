@@ -4,6 +4,7 @@
 
 <template>
   <div>
+    <h2>Works</h2>
     <v-container>
       <v-row justify="senter">
         <v-col
@@ -16,13 +17,14 @@
           v-for="title in Titles"
           :key="title"
         >
-          <!-- <v-spacer> -->
           <CardContent :title="title" />
-          <!-- </v-spacer> -->
+        </v-col>
+        <v-col cols="1">
+          <GoToButton :path="'/works'" name="Works" />
         </v-col>
       </v-row>
     </v-container>
-    <GoToButton :path="'/works'" name="Works" />
+    <!-- <GoToButton :path="'/works'" name="Works" /> -->
   </div>
 </template>
 
