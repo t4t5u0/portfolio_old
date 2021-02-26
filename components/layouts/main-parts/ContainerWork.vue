@@ -1,5 +1,6 @@
 <template>
-  <div class="container">this is container</div>
+  <div class="container">this is container<div v-bind:class={container}></div></div>
+  
 </template>
 
 <script>
