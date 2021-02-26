@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h2>Works</h2>
+    <h2 class="scoped">Works</h2>
     <v-container>
       <v-row justify="senter">
         <v-col
@@ -19,12 +19,9 @@
         >
           <CardContent :title="title" />
         </v-col>
-        <v-col cols="1">
-          <GoToButton :path="'/works'" name="Works" />
-        </v-col>
+        <GoToButton :path="'/works'" name="Works" />
       </v-row>
     </v-container>
-    <!-- <GoToButton :path="'/works'" name="Works" /> -->
   </div>
 </template>
 
@@ -39,4 +36,7 @@ export default {
 </script>
 
 <style>
+.scoped{
+  text-align: center;
+}
 </style>
