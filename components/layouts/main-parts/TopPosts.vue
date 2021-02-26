@@ -14,7 +14,7 @@
           sm="6"
           md="6"
           lg="6"
-          xl="6"
+          xl="3"
           v-for="title in Titles"
           :key="title"
         >
