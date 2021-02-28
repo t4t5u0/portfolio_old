@@ -3,7 +3,7 @@
 // 
 <template>
   <div>
-    <h2>About</h2>
+    <h2 class="centering">About</h2>
     <v-simple-table>
       <template v-slot:default>
         <!-- <thead>
@@ -87,5 +87,10 @@ export default {
 <style scoped>
 .no-margin {
   margin: 0 auto;
+}
+
+.centering{
+  text-align: center;
+  padding: 20px;
 }
 </style>
