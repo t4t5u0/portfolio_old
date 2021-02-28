@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="mainpage">
-      <TheHeader />
+      <!-- <TheHeader /> -->
+      <TopHeader />
       <TopAbout />
       <TopWorks />
       <TopPosts />
