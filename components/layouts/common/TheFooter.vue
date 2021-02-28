@@ -1,8 +1,11 @@
 <template>
   <div>
+    <v-app-bar bottom flat tag="footer">@2020 Ryuki Yamamoto</v-app-bar>
+  </div>
+  <!-- <div>
     <div id="footer-height"></div>
     <footer><p id="footer-text">@2020 Ryuki Yamamoto</p></footer>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -35,7 +38,6 @@ footer {
   /* margin-top: auto; */
   bottom: 0px;
 }
-
 
 #footer-text {
   flex: 1;
