@@ -4,40 +4,42 @@
 <template>
   <div>
     <h2 class="centering">About</h2>
-    <v-simple-table width="50%">
-      <template v-slot:default>
-        <!-- <thead>
+    <v-card outlined hover max-width="80%">
+      <v-simple-table width="50%">
+        <template v-slot:default>
+          <!-- <thead>
           <tr>
             <th width="300px" align:center />
             <th width="300px" />
           </tr>
         </thead> -->
-        <tbody>
-          <tr v-for="item in content1" :key="item.key">
-            <td>{{ item.key }}</td>
-            <td>{{ item.value }}</td>
-          </tr>
-          <!-- linkつき -->
-          <tr v-for="item in content2" :key="item.key">
-            <td>{{ item.key }}</td>
-            <td>
-              <a :href="item.link" target="_blank" class="no-margin">{{
-                item.value
-              }}</a>
-            </td>
-          </tr>
-          <!-- skills -->
-          <tr v-for="item in content3" :key="item.key">
-            <td>{{ item.key }}</td>
-            <td>
-              <ul v-for="lang in item.value" :key="lang.id">
-                <li>{{ lang }}</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
+          <tbody>
+            <tr v-for="item in content1" :key="item.key">
+              <td>{{ item.key }}</td>
+              <td>{{ item.value }}</td>
+            </tr>
+            <!-- linkつき -->
+            <tr v-for="item in content2" :key="item.key">
+              <td>{{ item.key }}</td>
+              <td>
+                <a :href="item.link" target="_blank" class="no-margin">{{
+                  item.value
+                }}</a>
+              </td>
+            </tr>
+            <!-- skills -->
+            <tr v-for="item in content3" :key="item.key">
+              <td>{{ item.key }}</td>
+              <td>
+                <ul v-for="lang in item.value" :key="lang.id">
+                  <li>{{ lang }}</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </template>
+      </v-simple-table>
+    </v-card>
     <v-container>
       <v-row>
         <GoToButton :path="'/about'" name="About" />
@@ -99,6 +101,10 @@ export default {
 .centering {
   text-align: center;
   padding: 20px;
+}
+
+.v-card {
+  margin: 0 auto;
 }
 
 /* v-simple-table {
