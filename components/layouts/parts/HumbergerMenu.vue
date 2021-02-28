@@ -20,8 +20,10 @@
       <div class="menu" v-show="isActive">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/works">Works</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/works">Works</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/history">History</a></li>
         </ul>
       </div>
     </transition>
@@ -53,7 +55,7 @@ export default {
   left: 20px;
   width: 32px;
   height: 2px;
-  background: #333333;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -103,11 +105,10 @@ export default {
   padding: 1rem;
 }
 
-
 .menu {
   background-color: rgba(197, 197, 197, 0.8);
   z-index: 30;
-  padding-top: 2rem ;
+  padding-top: 2rem;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -118,8 +119,9 @@ export default {
 .menu a {
   color: rgb(66, 66, 66);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 0 2rem;
+  margin: 0 auto;
 }
 .menu ul {
   margin: 1rem;

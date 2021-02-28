@@ -14,8 +14,8 @@
         ></v-img>
       </template>
       <v-app-bar-title>t4t5u0's portfolio</v-app-bar-title>
-      <v-spacer></v-spacer>
-      <v-app-bar-nav-icon> </v-app-bar-nav-icon>
+      <v-spacer />
+      <HumbergerMenu />
     </v-app-bar>
     <v-sheet id="scrolling-techniques" class="overflow-y-auto" height="136" />
   </dev>
