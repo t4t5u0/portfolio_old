@@ -4,12 +4,12 @@
 <template>
   <div>
     <h2 class="centering">About</h2>
-    <v-simple-table>
+    <v-simple-table width="50%">
       <template v-slot:default>
         <!-- <thead>
           <tr>
-            <th>First</th>
-            <th>Second</th>
+            <th width="300px" align:center />
+            <th width="300px" />
           </tr>
         </thead> -->
         <tbody>
@@ -38,11 +38,18 @@
         </tbody>
       </template>
     </v-simple-table>
+    <v-container>
+      <v-row>
+        <GoToButton :path="'/about'" name="About" />
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
+import GoToButton from "../parts/GoToButton.vue";
 export default {
+  components: { GoToButton },
   data() {
     return {
       content1: [
@@ -89,8 +96,12 @@ export default {
   margin: 0 auto;
 }
 
-.centering{
+.centering {
   text-align: center;
   padding: 20px;
 }
+
+/* v-simple-table {
+  width: 500px;
+} */
 </style>
