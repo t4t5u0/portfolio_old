@@ -9,7 +9,7 @@ export default {
 
 <style>
 .scoped1 {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 </style>
