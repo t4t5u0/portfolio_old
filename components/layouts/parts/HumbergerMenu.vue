@@ -19,11 +19,11 @@
     <transition name="menu">
       <div class="menu" v-show="isActive">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/works">Works</a></li>
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/history">History</a></li>
+          <li><nuxt-link to="/">Home</nuxt-link></li>
+          <li><nuxt-link to="/about">About</nuxt-link></li>
+          <li><nuxt-link to="/works">Works</nuxt-link></li>
+          <li><nuxt-link to="/posts">Posts</nuxt-link></li>
+          <li><nuxt-link to="/history">History</nuxt-link></li>
         </ul>
       </div>
     </transition>
