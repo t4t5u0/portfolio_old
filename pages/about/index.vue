@@ -54,12 +54,12 @@ export default {
           image: "mdi-language-go",
         },
         {
-          name: "Nuxt",
-          image: "mdi-nuxt",
-        },
-        {
           name: "Rust",
           image: "mdi-language-rust",
+        },
+        {
+          name: "Nuxt",
+          image: "mdi-nuxt",
         },
         {
           name: "Git",
@@ -72,6 +72,10 @@ export default {
         {
           name: "Docker",
           image: "mdi-docker",
+        },
+        {
+          name: "GCP",
+          image: "mdi-google-cloud",
         },
         {
           name: "Discord Bot",
