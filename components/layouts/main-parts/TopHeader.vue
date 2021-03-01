@@ -13,7 +13,8 @@
           gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
         ></v-img>
       </template>
-      <v-app-bar-title>t4t5u0's portfolio</v-app-bar-title>
+      <!-- <v-app-bar-title>t4t5u0's portfolio</v-app-bar-title> -->
+      <v-toolbar-title>t4t5u0's portfolio</v-toolbar-title>
       <v-spacer />
       <HumbergerMenu />
     </v-app-bar>
