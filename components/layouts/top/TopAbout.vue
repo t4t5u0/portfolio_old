@@ -4,7 +4,7 @@
 <template>
   <div>
     <h2 class="centering">About</h2>
-    <v-list>
+    <v-list width="80%" class="m0a">
       <v-list-item v-for="item in content1" :key="item">
         <v-list-item-content>{{ item.key }}</v-list-item-content>
         <v-list-item-content>{{ item.value }}</v-list-item-content>
@@ -78,7 +78,7 @@ export default {
 </script>
 
 <style scoped>
-.no-margin {
+.m0a {
   margin: 0 auto;
 }
 
@@ -86,12 +86,4 @@ export default {
   text-align: center;
   padding: 20px;
 }
-
-.v-card {
-  margin: 0 auto;
-}
-
-/* v-simple-table {
-  width: 500px;
-} */
 </style>
