@@ -1,7 +1,7 @@
 <template>
   <div>
     <TopHeader />
-    <h2>Profile</h2>
+    <h2 class="tac">Profile</h2>
     <v-list width="80%" class="m0a">
       <v-list-item v-for="item in profile" :key="item">
         <v-list-item-content>
@@ -10,7 +10,7 @@
         <v-list-item-content> {{ item.value }} </v-list-item-content>
       </v-list-item>
     </v-list>
-    <h2>Skills</h2>
+    <h2 class="tac">Skills</h2>
     <v-list>
       <v-list-item v-for="skill in skills" :key="skill">
         <v-list-item-avatar
@@ -21,7 +21,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
-    <h2>Social</h2>
+    <h2 class="tac">Social</h2>
     <v-list>
       <v-list-item v-for="item in social" :key="item">
         <v-list-item-avatar
@@ -152,4 +152,7 @@ export default {
   margin: 0 auto;
 }
 
+.tac {
+  text-align: center;
+}
 </style>
