@@ -2,6 +2,12 @@
   <div>
     <TopHeader />
     <h2>Profile</h2>
+    <v-list>
+      <v-list-item v-for="item in profile" :key="item">
+        <v-list-item-content> {{ item.key }} </v-list-item-content>
+        <v-list-item-content> {{ item.value }} </v-list-item-content>
+      </v-list-item>
+    </v-list>
     <h2>Skills</h2>
     <v-list>
       <v-list-item v-for="skill in skills" :key="skill">
@@ -14,7 +20,7 @@
       </v-list-item>
     </v-list>
     <h2>Social</h2>
-    <v-container>
+    <!-- <v-container>
       <v-row justify="senter" justify-lg="senter" justify-xl="senter">
         <v-col
           cols="12"
@@ -32,10 +38,23 @@
             </v-avatar>
             <v-card-title>{{ item.title }}</v-card-title>
           </v-card>
-          <!-- <CardContent :title="item.title" /> -->
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
+    <v-list>
+      <v-list-item v-for="item in social" :key="item">
+        <v-list-item-avatar
+          ><v-icon>{{ item.mdi }}</v-icon></v-list-item-avatar
+        >
+        <v-list-item-content>
+          <v-list-item-title
+            ><a :href="item.link" target="_blank">
+              {{ item.name }}
+            </a></v-list-item-title
+          >
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
     <TheFooter />
   </div>
 </template>
@@ -44,6 +63,17 @@
 export default {
   data() {
     return {
+      profile: [
+        {
+          key: "Name",
+          value: "Ryuki Yamamoto (山本 竜生)",
+        },
+        {
+          key: "University",
+          value:
+            "公立はこだて未来大学 情報システム科学部 複雑系知能学科 複雑系コース",
+        },
+      ],
       skills: [
         {
           name: "Python",
@@ -88,41 +118,47 @@ export default {
       ],
       social: [
         {
-          title: "GitHub",
+          name: "GitHub",
           image:
             "https://placehold.jp/000000/ffffff/150x150.png?text=GitHub%20icon%0A150x150",
           link: "https://github.com/t4t5u0",
+          mdi: "mdi-github",
         },
         {
-          title: "Qiita",
+          name: "Qiita",
           image:
             "https://placehold.jp/6cf567/ffffff/150x150.png?text=Qiita%20icon%0A150x150",
           link: "https://qiita.com/t4t5u0",
+          mdi: "mdi-qiita",
         },
         {
-          title: "Zenn",
+          name: "Zenn",
           image:
             "https://placehold.jp/60c0ff/ffffff/150x150.png?text=Zenn%20icon%0A150x150",
           link: "https://zenn.dev/t4t5u0",
+          mdi: "mdi-zenn",
         },
         {
-          title: "Twitter",
+          name: "Twitter",
           image:
             "https://placehold.jp/54c0ff/ffffff/150x150.png?text=Twitter%20icon%0A150x150",
           link: "https://twitter.com/i4mwh4ti4m",
+          mdi: "mdi-twitter",
         },
         {
-          title: "Discord",
+          name: "Discord",
           image:
             "https://placehold.jp/7289da/ffffff/150x150.png?text=Discord%20icon%0A150x150",
           link: "https://discord.com/invite/t4t5u0#4649",
+          mdi: "mdi-discord",
         },
         {
-          title: "Spotify",
+          name: "Spotify",
           image:
             "https://placehold.jp/6cf567/ffffff/150x150.png?text=Spotify%20icon%0A150x150",
           link:
             "https://open.spotify.com/user/rezvsvhniitx1fypvambvmui7?si=q09eyhkaTn-rJpBTq2LSEw",
+          mdi: "mdi-spotify",
         },
       ],
     };
