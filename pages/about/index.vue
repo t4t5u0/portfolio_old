@@ -2,9 +2,11 @@
   <div>
     <TopHeader />
     <h2>Profile</h2>
-    <v-list>
+    <v-list width="80%" class="m0a">
       <v-list-item v-for="item in profile" :key="item">
-        <v-list-item-content> {{ item.key }} </v-list-item-content>
+        <v-list-item-content>
+          {{ item.key }}
+        </v-list-item-content>
         <v-list-item-content> {{ item.value }} </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -12,7 +14,7 @@
     <v-list>
       <v-list-item v-for="skill in skills" :key="skill">
         <v-list-item-avatar
-          ><v-icon>{{ skill.image }}</v-icon></v-list-item-avatar
+          ><v-icon>{{ skill.mdi }}</v-icon></v-list-item-avatar
         >
         <v-list-item-content>
           <v-list-item-title>{{ skill.name }}</v-list-item-title>
@@ -56,43 +58,43 @@ export default {
       skills: [
         {
           name: "Python",
-          image: "mdi-language-python",
+          mdi: "mdi-language-python",
         },
         {
           name: "Go",
-          image: "mdi-language-go",
+          mdi: "mdi-language-go",
         },
         {
           name: "Rust",
-          image: "mdi-language-rust",
+          mdi: "mdi-language-rust",
         },
         {
           name: "Nuxt",
-          image: "mdi-nuxt",
+          mdi: "mdi-nuxt",
         },
         {
           name: "Git",
-          image: "mdi-git",
+          mdi: "mdi-git",
         },
         {
           name: "GitHub",
-          image: "mdi-github",
+          mdi: "mdi-github",
         },
         {
           name: "Docker",
-          image: "mdi-docker",
+          mdi: "mdi-docker",
         },
         {
           name: "GCP",
-          image: "mdi-google-cloud",
+          mdi: "mdi-google-cloud",
         },
         {
           name: "Discord Bot",
-          image: "mdi-discord",
+          mdi: "mdi-discord",
         },
         {
           name: "Deep Learning",
-          image: "mdi-brain",
+          mdi: "mdi-brain",
         },
       ],
       social: [
@@ -145,5 +147,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.m0a {
+  margin: 0 auto;
+}
+
 </style>
