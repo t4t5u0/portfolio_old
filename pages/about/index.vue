@@ -1,7 +1,19 @@
 <template>
   <div>
     <TopHeader />
-    <h2>social</h2>
+    <h2>Profile</h2>
+    <h2>Skills</h2>
+    <v-list>
+      <v-list-item v-for="skill in skills" :key="skill">
+        <v-list-item-avatar
+          ><v-icon>{{ skill.image }}</v-icon></v-list-item-avatar
+        >
+        <v-list-item-content>
+          <v-list-item-title>{{ skill.name }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+    <h2>Social</h2>
     <v-container>
       <v-row justify="senter" justify-lg="senter" justify-xl="senter">
         <v-col
@@ -11,7 +23,7 @@
           md="6"
           lg="6"
           xl="4"
-          v-for="item in object"
+          v-for="item in social"
           :key="item.id"
         >
           <v-card>
@@ -32,7 +44,45 @@
 export default {
   data() {
     return {
-      object: [
+      skills: [
+        {
+          name: "Python",
+          image: "mdi-language-python",
+        },
+        {
+          name: "Go",
+          image: "mdi-language-go",
+        },
+        {
+          name: "Nuxt",
+          image: "mdi-nuxt",
+        },
+        {
+          name: "Rust",
+          image: "mdi-language-rust",
+        },
+        {
+          name: "Git",
+          image: "mdi-git",
+        },
+        {
+          name: "GitHub",
+          image: "mdi-github",
+        },
+        {
+          name: "Docker",
+          image: "mdi-docker",
+        },
+        {
+          name: "Discord Bot",
+          image: "mdi-discord",
+        },
+        {
+          name: "Deep Learning",
+          image: "mdi-brain",
+        },
+      ],
+      social: [
         {
           title: "GitHub",
           image:
