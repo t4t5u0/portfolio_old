@@ -20,27 +20,6 @@
       </v-list-item>
     </v-list>
     <h2>Social</h2>
-    <!-- <v-container>
-      <v-row justify="senter" justify-lg="senter" justify-xl="senter">
-        <v-col
-          cols="12"
-          xs="12"
-          sm="6"
-          md="6"
-          lg="6"
-          xl="4"
-          v-for="item in social"
-          :key="item.id"
-        >
-          <v-card>
-            <v-avatar tile size="128">
-              <img :src="item.image" />
-            </v-avatar>
-            <v-card-title>{{ item.title }}</v-card-title>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container> -->
     <v-list>
       <v-list-item v-for="item in social" :key="item">
         <v-list-item-avatar
