@@ -4,42 +4,26 @@
 <template>
   <div>
     <h2 class="centering">About</h2>
-    <v-card outlined hover max-width="80%">
-      <v-simple-table width="50%">
-        <template v-slot:default>
-          <!-- <thead>
-          <tr>
-            <th width="300px" align:center />
-            <th width="300px" />
-          </tr>
-        </thead> -->
-          <tbody>
-            <tr v-for="item in content1" :key="item.key">
-              <td>{{ item.key }}</td>
-              <td>{{ item.value }}</td>
-            </tr>
-            <!-- linkつき -->
-            <tr v-for="item in content2" :key="item.key">
-              <td>{{ item.key }}</td>
-              <td>
-                <a :href="item.link" target="_blank" class="no-margin">{{
-                  item.value
-                }}</a>
-              </td>
-            </tr>
-            <!-- skills -->
-            <tr v-for="item in content3" :key="item.key">
-              <td>{{ item.key }}</td>
-              <td>
-                <ul v-for="lang in item.value" :key="lang.id">
-                  <li>{{ lang }}</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
-    </v-card>
+    <v-list>
+      <v-list-item v-for="item in content1" :key="item">
+        <v-list-item-content>{{ item.key }}</v-list-item-content>
+        <v-list-item-content>{{ item.value }}</v-list-item-content>
+      </v-list-item>
+      <v-list-item v-for="item in content2" :key="item">
+        <v-list-item-content>{{ item.key }}</v-list-item-content>
+        <v-list-item-content
+          ><a :href="item.link"> {{ item.value }}</a></v-list-item-content
+        >
+      </v-list-item>
+      <div v-for="item in content3" :key="item">
+        <v-list-item v-for="(lang, index) in item.value" :key="lang">
+          <v-list-item-content>{{
+            index === 0 ? item.key : ""
+          }}</v-list-item-content>
+          <v-list-item-content>{{ lang }}</v-list-item-content>
+        </v-list-item>
+      </div>
+    </v-list>
     <v-container>
       <v-row>
         <GoToButton :path="'/about'" name="About" />
