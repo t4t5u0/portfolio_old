@@ -15,9 +15,9 @@
               >ソートなぞなぞというゲームをDiscord
               Botにしました。ソートなぞなぞとは、文字列を文字コード順に並べ替え、並べ替える前の文字列を推測する遊びです。</v-card-text
             >
-            <v-chip-group column>
-              <v-chip disabled color="#ffd900">Python</v-chip>
-              <v-chip disabled color="#7289da">Discord Bot</v-chip>
+            <v-chip-group column active-class="white--text">
+              <v-chip disabled color="#ffd900" text-color="#00f">Python</v-chip>
+              <v-chip disabled color="#7289da" text-color="#111">Discord Bot</v-chip>
             </v-chip-group>
 
             <v-btn
@@ -59,5 +59,4 @@ export default {
 .tac {
   text-align: center;
 }
-
 </style>
