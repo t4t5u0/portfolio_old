@@ -17,7 +17,9 @@
             >
             <v-chip-group column active-class="white--text">
               <v-chip disabled color="#ffd900" text-color="#00f">Python</v-chip>
-              <v-chip disabled color="#7289da" text-color="#111">Discord Bot</v-chip>
+              <v-chip disabled color="#7289da" text-color="#111"
+                >Discord Bot</v-chip
+              >
             </v-chip-group>
 
             <v-btn
@@ -25,6 +27,12 @@
               href="http://github.com/t4t5u0/sort-riddle-v2"
               target="_blank"
               >view on GitHub</v-btn
+            >
+            <v-btn
+              rounded
+              href="./works/pages/sort_riddle"
+              target="_blank"
+              >more</v-btn
             >
           </v-card>
         </v-col>
