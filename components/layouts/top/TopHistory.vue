@@ -7,7 +7,7 @@
   <div>
     <h2>History</h2>
     <v-container>
-      <v-row justify="senter" justify-lg="senter" justify-xl="senter">
+      <v-row>
         <v-col
           cols="12"
           xs="12"

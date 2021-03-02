@@ -5,18 +5,18 @@
   <div>
     <h2 class="centering">About</h2>
     <v-list width="80%" class="m0a">
-      <v-list-item v-for="item in content1" :key="item">
+      <v-list-item v-for="item in content1" :key="item.id">
         <v-list-item-content>{{ item.key }}</v-list-item-content>
         <v-list-item-content>{{ item.value }}</v-list-item-content>
       </v-list-item>
-      <v-list-item v-for="item in content2" :key="item">
+      <v-list-item v-for="item in content2" :key="item.id">
         <v-list-item-content>{{ item.key }}</v-list-item-content>
         <v-list-item-content
           ><a :href="item.link"> {{ item.value }}</a></v-list-item-content
         >
       </v-list-item>
-      <div v-for="item in content3" :key="item">
-        <v-list-item v-for="(lang, index) in item.value" :key="lang">
+      <div v-for="item in content3" :key="item.id">
+        <v-list-item v-for="(lang, index) in item.value" :key="index">
           <v-list-item-content>{{
             index === 0 ? item.key : ""
           }}</v-list-item-content>
