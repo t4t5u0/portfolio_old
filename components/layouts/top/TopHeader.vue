@@ -1,5 +1,5 @@
 <template>
-  <dev>
+  <div>
     <v-app-bar
       fixed
       color="#fff"
@@ -19,7 +19,7 @@
       <HumbergerMenu />
     </v-app-bar>
     <v-sheet id="scrolling-techniques" class="overflow-y-auto" height="136" />
-  </dev>
+  </div>
 </template>
 
 <script>
