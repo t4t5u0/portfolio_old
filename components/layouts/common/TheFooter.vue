@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar bottom flat tag="footer" color="success">@2020 Ryuki Yamamoto</v-app-bar>
+    <v-app-bar bottom flat tag="footer" color="primary">@2020 Ryuki Yamamoto</v-app-bar>
   </div>
   <!-- <div>
     <div id="footer-height"></div>
